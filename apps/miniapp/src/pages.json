@@ -1,0 +1,13 @@
+{
+  "pages": [
+    { "path": "pages/home/index", "style": { "navigationBarTitleText": "408 刷题" } },
+    { "path": "pages/subjects/index", "style": { "navigationBarTitleText": "选择科目" } },
+    { "path": "pages/practice/index", "style": { "navigationBarTitleText": "开始答题" } }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "408 刷题",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f6f7fb"
+  }
+}

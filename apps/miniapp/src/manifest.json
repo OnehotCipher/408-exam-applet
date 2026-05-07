@@ -1,0 +1,11 @@
+{
+  "name": "考研 408 答题",
+  "appid": "",
+  "description": "考研 408 刷题训练小程序",
+  "versionName": "0.1.0",
+  "versionCode": "1",
+  "mp-weixin": {
+    "appid": "",
+    "usingComponents": true
+  }
+}

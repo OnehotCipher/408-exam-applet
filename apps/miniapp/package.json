@@ -1,0 +1,28 @@
+{
+  "name": "@study408/miniapp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:mp-weixin": "uni build -p mp-weixin",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest run",
+    "build": "uni build -p mp-weixin"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "latest",
+    "@dcloudio/uni-components": "latest",
+    "@study408/shared": "workspace:*",
+    "pinia": "latest",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "latest",
+    "@dcloudio/vite-plugin-uni": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "latest",
+    "vue-tsc": "latest"
+  }
+}
