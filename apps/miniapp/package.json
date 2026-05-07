@@ -11,18 +11,20 @@
     "build": "uni build -p mp-weixin"
   },
   "dependencies": {
-    "@dcloudio/uni-app": "latest",
-    "@dcloudio/uni-components": "latest",
+    "@dcloudio/uni-app": "3.0.0-alpha-5000820260430001",
+    "@dcloudio/uni-components": "3.0.0-alpha-5000820260430001",
     "@study408/shared": "workspace:*",
-    "pinia": "latest",
-    "vue": "latest"
+    "pinia": "2.1.7",
+    "vue": "3.4.21"
   },
   "devDependencies": {
     "@dcloudio/types": "latest",
-    "@dcloudio/vite-plugin-uni": "latest",
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-5000820260430001",
     "typescript": "latest",
-    "vite": "latest",
-    "vitest": "latest",
-    "vue-tsc": "latest"
+    "vite": "5.2.8",
+    "vitest": "2.1.9",
+    "vue-tsc": "latest",
+    "@dcloudio/uni-cli-shared": "3.0.0-alpha-5000820260430001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-alpha-5000820260430001"
   }
 }

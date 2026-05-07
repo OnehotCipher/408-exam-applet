@@ -4,13 +4,13 @@
   "private": true,
   "packageManager": "pnpm@10.0.0",
   "scripts": {
-    "typecheck": "pnpm -r typecheck",
-    "test": "pnpm -r test",
-    "build": "pnpm -r build"
+    "typecheck": "corepack pnpm -r typecheck",
+    "test": "corepack pnpm -r test",
+    "build": "corepack pnpm -r build"
   },
   "devDependencies": {
     "@types/node": "latest",
     "typescript": "latest",
-    "vitest": "latest"
+    "vitest": "2.1.9"
   }
 }
