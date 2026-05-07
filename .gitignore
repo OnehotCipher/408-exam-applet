@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+coverage/
+.env
+.env.*
+!.env.example
+unpackage/
+cloudfunctions/**/node_modules/
+cloudfunctions/**/dist/
+.worktrees
+.worktrees/
+.agents/
+.claude/
+.superpowers/
