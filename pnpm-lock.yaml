@@ -86,6 +86,30 @@ importers:
         specifier: latest
         version: 3.0.4
 
+  cloudfunctions/getFavoriteQuestions:
+    dependencies:
+      '@study408/cloud-common':
+        specifier: workspace:*
+        version: link:../common
+      '@study408/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
+      wx-server-sdk:
+        specifier: latest
+        version: 3.0.4
+
+  cloudfunctions/getPracticeStats:
+    dependencies:
+      '@study408/cloud-common':
+        specifier: workspace:*
+        version: link:../common
+      '@study408/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
+      wx-server-sdk:
+        specifier: latest
+        version: 3.0.4
+
   cloudfunctions/getQuestionDetail:
     dependencies:
       '@study408/cloud-common':
@@ -110,6 +134,18 @@ importers:
         specifier: latest
         version: 3.0.4
 
+  cloudfunctions/getWrongQuestions:
+    dependencies:
+      '@study408/cloud-common':
+        specifier: workspace:*
+        version: link:../common
+      '@study408/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
+      wx-server-sdk:
+        specifier: latest
+        version: 3.0.4
+
   cloudfunctions/login:
     dependencies:
       '@study408/cloud-common':
@@ -123,6 +159,30 @@ importers:
         version: 3.0.4
 
   cloudfunctions/submitAnswer:
+    dependencies:
+      '@study408/cloud-common':
+        specifier: workspace:*
+        version: link:../common
+      '@study408/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
+      wx-server-sdk:
+        specifier: latest
+        version: 3.0.4
+
+  cloudfunctions/toggleFavoriteQuestion:
+    dependencies:
+      '@study408/cloud-common':
+        specifier: workspace:*
+        version: link:../common
+      '@study408/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
+      wx-server-sdk:
+        specifier: latest
+        version: 3.0.4
+
+  cloudfunctions/updateWrongQuestionStatus:
     dependencies:
       '@study408/cloud-common':
         specifier: workspace:*
