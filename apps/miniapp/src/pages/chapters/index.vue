@@ -1,15 +1,15 @@
 <template>
   <view class="page">
     <view class="section-head">
-      <text class="title">选择科目</text>
-      <text class="desc">从 408 四门科目进入章节练习。</text>
+      <text class="title">{{ subjectName || '选择章节' }}</text>
+      <text class="desc">选择章节后开始客观题练习。</text>
     </view>
     <view v-if="loading" class="state">加载中...</view>
-    <view v-else-if="subjects.length === 0" class="state">暂无可练习科目</view>
+    <view v-else-if="chapters.length === 0" class="state">暂无章节数据</view>
     <view v-else class="list">
-      <view v-for="subject in subjects" :key="subject._id" class="card" @tap="openChapters(subject)">
-        <text class="card-title">{{ subject.name }}</text>
-        <text class="card-desc">进入章节列表</text>
+      <view v-for="chapter in chapters" :key="chapter._id" class="card" @tap="openPractice(chapter)">
+        <text class="card-title">{{ chapter.name }}</text>
+        <text class="card-desc">开始练习</text>
       </view>
     </view>
   </view>
@@ -21,26 +21,33 @@ import { ref } from 'vue';
 import type { Category } from '@study408/shared';
 import { getCategories } from '../../services/category.service';
 
-const subjects = ref<Category[]>([]);
+const subjectId = ref('');
+const subjectName = ref('');
+const chapters = ref<Category[]>([]);
 const loading = ref(false);
 
-async function loadSubjects() {
+async function loadChapters() {
+  if (!subjectId.value) return;
   loading.value = true;
   try {
-    const result = await getCategories(uniCloud, { type: 'subject' });
-    subjects.value = result.items;
+    const result = await getCategories(uniCloud, { type: 'chapter', parentId: subjectId.value });
+    chapters.value = result.items;
   } catch (error) {
-    uni.showToast({ title: error instanceof Error ? error.message : '加载科目失败', icon: 'none' });
+    uni.showToast({ title: error instanceof Error ? error.message : '加载章节失败', icon: 'none' });
   } finally {
     loading.value = false;
   }
 }
 
-function openChapters(subject: Category) {
-  uni.navigateTo({ url: `/pages/chapters/index?subjectId=${subject._id}&subjectName=${encodeURIComponent(subject.name)}` });
+function openPractice(chapter: Category) {
+  uni.navigateTo({ url: `/pages/practice/index?subjectId=${subjectId.value}&chapterId=${chapter._id}` });
 }
 
-onLoad(loadSubjects);
+onLoad((options) => {
+  subjectId.value = String(options?.subjectId || '');
+  subjectName.value = decodeURIComponent(String(options?.subjectName || ''));
+  loadChapters();
+});
 </script>
 
 <style scoped>
