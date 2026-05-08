@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["@dcloudio/types", "vitest/globals"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.json"]
+}
