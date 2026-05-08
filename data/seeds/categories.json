@@ -1,0 +1,194 @@
+[
+  {
+    "_id": "data-structure",
+    "type": "subject",
+    "name": "数据结构",
+    "parentId": null,
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "computer-organization",
+    "type": "subject",
+    "name": "计算机组成原理",
+    "parentId": null,
+    "sortOrder": 2,
+    "enabled": true
+  },
+  {
+    "_id": "operating-system",
+    "type": "subject",
+    "name": "操作系统",
+    "parentId": null,
+    "sortOrder": 3,
+    "enabled": true
+  },
+  {
+    "_id": "computer-network",
+    "type": "subject",
+    "name": "计算机网络",
+    "parentId": null,
+    "sortOrder": 4,
+    "enabled": true
+  },
+  {
+    "_id": "ds-linear-list",
+    "type": "chapter",
+    "name": "线性表",
+    "parentId": "data-structure",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "ds-tree",
+    "type": "chapter",
+    "name": "树与二叉树",
+    "parentId": "data-structure",
+    "sortOrder": 2,
+    "enabled": true
+  },
+  {
+    "_id": "co-data-representation",
+    "type": "chapter",
+    "name": "数据表示与运算",
+    "parentId": "computer-organization",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "co-memory",
+    "type": "chapter",
+    "name": "存储系统",
+    "parentId": "computer-organization",
+    "sortOrder": 2,
+    "enabled": true
+  },
+  {
+    "_id": "os-process",
+    "type": "chapter",
+    "name": "进程与线程",
+    "parentId": "operating-system",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "os-memory",
+    "type": "chapter",
+    "name": "内存管理",
+    "parentId": "operating-system",
+    "sortOrder": 2,
+    "enabled": true
+  },
+  {
+    "_id": "cn-physical",
+    "type": "chapter",
+    "name": "物理层",
+    "parentId": "computer-network",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "cn-network",
+    "type": "chapter",
+    "name": "网络层",
+    "parentId": "computer-network",
+    "sortOrder": 2,
+    "enabled": true
+  },
+  {
+    "_id": "ds-linear-list-concept",
+    "type": "knowledge_point",
+    "name": "线性表概念",
+    "parentId": "ds-linear-list",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "ds-linear-list-storage",
+    "type": "knowledge_point",
+    "name": "线性表存储结构",
+    "parentId": "ds-linear-list",
+    "sortOrder": 2,
+    "enabled": true
+  },
+  {
+    "_id": "ds-tree-traversal",
+    "type": "knowledge_point",
+    "name": "二叉树遍历",
+    "parentId": "ds-tree",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "ds-tree-property",
+    "type": "knowledge_point",
+    "name": "二叉树性质",
+    "parentId": "ds-tree",
+    "sortOrder": 2,
+    "enabled": true
+  },
+  {
+    "_id": "co-number-system",
+    "type": "knowledge_point",
+    "name": "数制与编码",
+    "parentId": "co-data-representation",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "co-cache",
+    "type": "knowledge_point",
+    "name": "Cache",
+    "parentId": "co-memory",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "os-process-sync",
+    "type": "knowledge_point",
+    "name": "进程同步",
+    "parentId": "os-process",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "os-deadlock",
+    "type": "knowledge_point",
+    "name": "死锁",
+    "parentId": "os-process",
+    "sortOrder": 2,
+    "enabled": true
+  },
+  {
+    "_id": "os-paging",
+    "type": "knowledge_point",
+    "name": "分页管理",
+    "parentId": "os-memory",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "cn-coding",
+    "type": "knowledge_point",
+    "name": "编码与调制",
+    "parentId": "cn-physical",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "cn-ip",
+    "type": "knowledge_point",
+    "name": "IPv4",
+    "parentId": "cn-network",
+    "sortOrder": 1,
+    "enabled": true
+  },
+  {
+    "_id": "cn-routing",
+    "type": "knowledge_point",
+    "name": "路由选择",
+    "parentId": "cn-network",
+    "sortOrder": 2,
+    "enabled": true
+  }
+]

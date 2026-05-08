@@ -6,7 +6,8 @@
   "scripts": {
     "typecheck": "corepack pnpm -r typecheck",
     "test": "corepack pnpm -r test",
-    "build": "corepack pnpm -r build"
+    "build": "corepack pnpm -r build",
+    "validate:seeds": "node scripts/validate-seeds.mjs"
   },
   "devDependencies": {
     "@types/node": "latest",

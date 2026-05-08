@@ -1,0 +1,263 @@
+[
+  {
+    "_id": "cn-physical-001",
+    "type": "single_choice",
+    "subjectId": "computer-network",
+    "chapterId": "cn-physical",
+    "knowledgePointIds": [
+      "cn-coding"
+    ],
+    "stem": "曼彻斯特编码的主要特点是每个码元中间都有一次电平跳变，该跳变可用于（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "差错纠正"
+      },
+      {
+        "key": "B",
+        "text": "时钟同步"
+      },
+      {
+        "key": "C",
+        "text": "路由选择"
+      },
+      {
+        "key": "D",
+        "text": "拥塞控制"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "analysis": "曼彻斯特编码在码元中间跳变，接收方可利用跳变提取同步时钟。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "物理层",
+      "编码"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "cn-physical-002",
+    "type": "single_choice",
+    "subjectId": "computer-network",
+    "chapterId": "cn-physical",
+    "knowledgePointIds": [
+      "cn-coding"
+    ],
+    "stem": "在无噪声信道中，限制码元传输速率的经典准则是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "奈奎斯特准则"
+      },
+      {
+        "key": "B",
+        "text": "香农定理"
+      },
+      {
+        "key": "C",
+        "text": "滑动窗口协议"
+      },
+      {
+        "key": "D",
+        "text": "距离向量算法"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "analysis": "奈奎斯特准则给出理想低通信道的最高码元传输速率；香农定理用于有噪声信道容量。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "物理层",
+      "信道容量"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "cn-physical-003",
+    "type": "multiple_choice",
+    "subjectId": "computer-network",
+    "chapterId": "cn-physical",
+    "knowledgePointIds": [
+      "cn-coding"
+    ],
+    "stem": "关于物理层传输，下列说法正确的有（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "波特率表示每秒传输的码元数"
+      },
+      {
+        "key": "B",
+        "text": "比特率表示每秒传输的比特数"
+      },
+      {
+        "key": "C",
+        "text": "一个码元可以携带多个比特"
+      },
+      {
+        "key": "D",
+        "text": "信噪比会影响信道容量"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "analysis": "波特率和比特率含义不同，多进制调制下一个码元可携带多个比特；信噪比影响香农容量。",
+    "score": 1,
+    "difficulty": "medium",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "物理层",
+      "码元",
+      "信道容量"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "cn-network-001",
+    "type": "single_choice",
+    "subjectId": "computer-network",
+    "chapterId": "cn-network",
+    "knowledgePointIds": [
+      "cn-ip"
+    ],
+    "stem": "IPv4 地址 192.168.1.130/26 所在子网的网络地址是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "192.168.1.0"
+      },
+      {
+        "key": "B",
+        "text": "192.168.1.64"
+      },
+      {
+        "key": "C",
+        "text": "192.168.1.128"
+      },
+      {
+        "key": "D",
+        "text": "192.168.1.192"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "analysis": "/26 的块大小为 64，130 落在 128 到 191 的地址块中，因此网络地址为 192.168.1.128。",
+    "score": 1,
+    "difficulty": "medium",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "IPv4",
+      "CIDR"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "cn-network-002",
+    "type": "single_choice",
+    "subjectId": "computer-network",
+    "chapterId": "cn-network",
+    "knowledgePointIds": [
+      "cn-routing"
+    ],
+    "stem": "距离向量路由算法中，路由器交换的主要信息是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "链路状态数据库"
+      },
+      {
+        "key": "B",
+        "text": "到各目的网络的距离向量"
+      },
+      {
+        "key": "C",
+        "text": "完整分组载荷"
+      },
+      {
+        "key": "D",
+        "text": "物理层编码方式"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "analysis": "距离向量算法中路由器周期性或触发式向邻居通告自己到各目的网络的距离估计。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "路由选择",
+      "距离向量"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "cn-network-003",
+    "type": "multiple_choice",
+    "subjectId": "computer-network",
+    "chapterId": "cn-network",
+    "knowledgePointIds": [
+      "cn-ip",
+      "cn-routing"
+    ],
+    "stem": "关于网络层功能，下列说法正确的有（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "IP 提供尽力而为的数据报服务"
+      },
+      {
+        "key": "B",
+        "text": "路由选择用于确定分组转发路径"
+      },
+      {
+        "key": "C",
+        "text": "CIDR 可提高地址分配灵活性"
+      },
+      {
+        "key": "D",
+        "text": "路由器通常根据目的 IP 地址转发分组"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "analysis": "网络层负责数据报转发与路由选择；IP 是尽力而为服务，CIDR 支持更灵活的前缀划分。",
+    "score": 1,
+    "difficulty": "medium",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "网络层",
+      "IPv4",
+      "路由选择"
+    ],
+    "status": "published"
+  }
+]

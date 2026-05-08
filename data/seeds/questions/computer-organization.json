@@ -1,0 +1,261 @@
+[
+  {
+    "_id": "co-data-representation-001",
+    "type": "single_choice",
+    "subjectId": "computer-organization",
+    "chapterId": "co-data-representation",
+    "knowledgePointIds": [
+      "co-number-system"
+    ],
+    "stem": "n 位补码整数可表示的最小值是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "-2^n"
+      },
+      {
+        "key": "B",
+        "text": "-2^(n-1)"
+      },
+      {
+        "key": "C",
+        "text": "-2^(n-1)+1"
+      },
+      {
+        "key": "D",
+        "text": "0"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "analysis": "n 位补码的取值范围是 -2^(n-1) 到 2^(n-1)-1。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "补码",
+      "数据表示"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "co-data-representation-002",
+    "type": "single_choice",
+    "subjectId": "computer-organization",
+    "chapterId": "co-data-representation",
+    "knowledgePointIds": [
+      "co-number-system"
+    ],
+    "stem": "对规格化浮点数而言，阶码主要决定该数的（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "数值范围"
+      },
+      {
+        "key": "B",
+        "text": "有效数字位数"
+      },
+      {
+        "key": "C",
+        "text": "符号"
+      },
+      {
+        "key": "D",
+        "text": "舍入方式"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "analysis": "阶码决定小数点位置，因此主要影响浮点数可表示范围；尾数主要影响精度。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "浮点数",
+      "阶码"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "co-data-representation-003",
+    "type": "multiple_choice",
+    "subjectId": "computer-organization",
+    "chapterId": "co-data-representation",
+    "knowledgePointIds": [
+      "co-number-system"
+    ],
+    "stem": "关于定点数和浮点数表示，下列说法正确的有（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "补码加法可将减法转化为加法"
+      },
+      {
+        "key": "B",
+        "text": "原码零有正零和负零两种表示"
+      },
+      {
+        "key": "C",
+        "text": "浮点数尾数位数会影响表示精度"
+      },
+      {
+        "key": "D",
+        "text": "阶码位数越多通常可表示的范围越大"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "analysis": "补码便于加减统一；原码存在 +0 和 -0；尾数影响精度，阶码影响范围。",
+    "score": 1,
+    "difficulty": "medium",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "数据表示",
+      "补码",
+      "浮点数"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "co-memory-001",
+    "type": "single_choice",
+    "subjectId": "computer-organization",
+    "chapterId": "co-memory",
+    "knowledgePointIds": [
+      "co-cache"
+    ],
+    "stem": "Cache 与主存之间的数据交换单位通常是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "字节"
+      },
+      {
+        "key": "B",
+        "text": "字"
+      },
+      {
+        "key": "C",
+        "text": "主存块"
+      },
+      {
+        "key": "D",
+        "text": "程序"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "analysis": "Cache 和主存按块进行映射与替换，数据传送单位通常为块。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "Cache",
+      "存储层次"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "co-memory-002",
+    "type": "single_choice",
+    "subjectId": "computer-organization",
+    "chapterId": "co-memory",
+    "knowledgePointIds": [
+      "co-cache"
+    ],
+    "stem": "在直接映射 Cache 中，某个主存块可以映射到 Cache 的（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "任意一行"
+      },
+      {
+        "key": "B",
+        "text": "唯一一行"
+      },
+      {
+        "key": "C",
+        "text": "任意两行"
+      },
+      {
+        "key": "D",
+        "text": "所有空闲行"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "analysis": "直接映射中主存块号通过映射函数确定唯一 Cache 行。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "Cache",
+      "直接映射"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "co-memory-003",
+    "type": "multiple_choice",
+    "subjectId": "computer-organization",
+    "chapterId": "co-memory",
+    "knowledgePointIds": [
+      "co-cache"
+    ],
+    "stem": "关于 Cache 性能，下列说法正确的有（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "程序局部性是 Cache 有效的基础"
+      },
+      {
+        "key": "B",
+        "text": "命中率越高平均访问时间通常越低"
+      },
+      {
+        "key": "C",
+        "text": "块大小过大可能增加失效代价"
+      },
+      {
+        "key": "D",
+        "text": "全相联映射查找复杂度通常高于直接映射"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "analysis": "Cache 利用时间和空间局部性；命中率、失效代价和映射方式共同影响平均访问时间与硬件复杂度。",
+    "score": 1,
+    "difficulty": "medium",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "Cache",
+      "性能"
+    ],
+    "status": "published"
+  }
+]
