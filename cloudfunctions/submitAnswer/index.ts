@@ -1,5 +1,6 @@
 import cloud from 'wx-server-sdk';
 import { gradeObjectiveAnswer } from '../common/objective-grading';
+import { buildWrongQuestionRecord } from '../common/practice-records';
 import { failure, success } from '../common/response';
 
 cloud.init({ env: cloud.DYNAMIC_CURRENT_ENV });
@@ -36,6 +37,8 @@ export async function main(event: { questionId?: string; userAnswer?: string[]; 
       openid,
       questionId: event.questionId,
       questionType: question.type,
+      subjectId: question.subjectId,
+      chapterId: question.chapterId,
       userAnswer: grading.userAnswer,
       isCorrect: grading.isCorrect,
       score: grading.score,
@@ -45,5 +48,30 @@ export async function main(event: { questionId?: string; userAnswer?: string[]; 
     }
   });
 
-  return success(grading);
+  if (!grading.isCorrect) {
+    const now = new Date();
+    const wrongResult = await db.collection('wrong_questions').where({ openid, questionId: event.questionId }).limit(1).get();
+    const existing = wrongResult.data[0];
+
+    if (existing?._id) {
+      await db.collection('wrong_questions').doc(existing._id).update({
+        data: {
+          wrongCount: (existing.wrongCount || 0) + 1,
+          lastWrongAt: now,
+          updatedAt: now
+        }
+      });
+    } else {
+      await db.collection('wrong_questions').add({
+        data: buildWrongQuestionRecord({
+          openid,
+          questionId: event.questionId,
+          questionType: question.type,
+          now
+        })
+      });
+    }
+  }
+
+  return success({ ...grading, wrongQuestionStatus: grading.isCorrect ? undefined : 'unresolved' });
 }

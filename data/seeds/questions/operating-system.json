@@ -1,0 +1,259 @@
+[
+  {
+    "_id": "os-process-001",
+    "type": "single_choice",
+    "subjectId": "operating-system",
+    "chapterId": "os-process",
+    "knowledgePointIds": [
+      "os-process-sync"
+    ],
+    "stem": "用 P、V 操作实现互斥时，信号量初值通常应设置为（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "0"
+      },
+      {
+        "key": "B",
+        "text": "1"
+      },
+      {
+        "key": "C",
+        "text": "-1"
+      },
+      {
+        "key": "D",
+        "text": "进程数"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "analysis": "互斥信号量表示临界资源可用数量，单个互斥资源初值通常为 1。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "进程同步",
+      "信号量"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "os-process-002",
+    "type": "single_choice",
+    "subjectId": "operating-system",
+    "chapterId": "os-process",
+    "knowledgePointIds": [
+      "os-deadlock"
+    ],
+    "stem": "产生死锁的必要条件中，表示资源不能被强行夺取的是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "互斥条件"
+      },
+      {
+        "key": "B",
+        "text": "不剥夺条件"
+      },
+      {
+        "key": "C",
+        "text": "请求并保持条件"
+      },
+      {
+        "key": "D",
+        "text": "循环等待条件"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "analysis": "不剥夺条件指进程已获得的资源在未使用完之前不能被其他进程强行夺取。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "死锁",
+      "必要条件"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "os-process-003",
+    "type": "multiple_choice",
+    "subjectId": "operating-system",
+    "chapterId": "os-process",
+    "knowledgePointIds": [
+      "os-process-sync",
+      "os-deadlock"
+    ],
+    "stem": "关于进程同步与死锁，下列说法正确的有（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "临界区一次只允许一个相关进程进入"
+      },
+      {
+        "key": "B",
+        "text": "信号量可用于实现互斥和同步"
+      },
+      {
+        "key": "C",
+        "text": "破坏循环等待条件可预防死锁"
+      },
+      {
+        "key": "D",
+        "text": "死锁一定会自动解除"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "analysis": "临界区需要互斥访问；信号量既可同步也可互斥；预防死锁可破坏必要条件之一；死锁通常不会自动解除。",
+    "score": 1,
+    "difficulty": "medium",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "进程同步",
+      "死锁"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "os-memory-001",
+    "type": "single_choice",
+    "subjectId": "operating-system",
+    "chapterId": "os-memory",
+    "knowledgePointIds": [
+      "os-paging"
+    ],
+    "stem": "分页存储管理中，地址转换通常需要查询（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "文件目录"
+      },
+      {
+        "key": "B",
+        "text": "页表"
+      },
+      {
+        "key": "C",
+        "text": "进程控制块"
+      },
+      {
+        "key": "D",
+        "text": "空闲区表"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "analysis": "分页系统通过页表将逻辑页号转换为物理块号。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "分页管理",
+      "页表"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "os-memory-002",
+    "type": "single_choice",
+    "subjectId": "operating-system",
+    "chapterId": "os-memory",
+    "knowledgePointIds": [
+      "os-paging"
+    ],
+    "stem": "快表 TLB 的主要作用是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "扩大内存容量"
+      },
+      {
+        "key": "B",
+        "text": "加快页表项查询"
+      },
+      {
+        "key": "C",
+        "text": "保存全部页面内容"
+      },
+      {
+        "key": "D",
+        "text": "完成磁盘调度"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "analysis": "TLB 缓存最近使用的页表项，可减少访问页表造成的额外内存访问。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "分页管理",
+      "TLB"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "os-memory-003",
+    "type": "multiple_choice",
+    "subjectId": "operating-system",
+    "chapterId": "os-memory",
+    "knowledgePointIds": [
+      "os-paging"
+    ],
+    "stem": "关于分页存储管理，下列说法正确的有（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "逻辑地址通常由页号和页内偏移组成"
+      },
+      {
+        "key": "B",
+        "text": "页面大小一般为固定值"
+      },
+      {
+        "key": "C",
+        "text": "分页可以减少外部碎片"
+      },
+      {
+        "key": "D",
+        "text": "缺页中断一定表示程序出错"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "analysis": "分页地址由页号和页内偏移组成，页面大小固定，能减少外部碎片；缺页可能是正常的按需调页过程。",
+    "score": 1,
+    "difficulty": "medium",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "分页管理",
+      "地址转换"
+    ],
+    "status": "published"
+  }
+]

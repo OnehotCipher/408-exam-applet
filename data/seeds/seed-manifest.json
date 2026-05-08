@@ -1,0 +1,13 @@
+{
+  "version": "2026.05.08",
+  "description": "Phase 2 objective question seed data with original 408-style questions",
+  "categoryFile": "data/seeds/categories.json",
+  "questionFiles": [
+    "data/seeds/questions/data-structure.json",
+    "data/seeds/questions/computer-organization.json",
+    "data/seeds/questions/operating-system.json",
+    "data/seeds/questions/computer-network.json"
+  ],
+  "minimumQuestionCount": 24,
+  "createdForPhase": "phase-2-objective-loop"
+}

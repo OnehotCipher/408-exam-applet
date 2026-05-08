@@ -1,4 +1,4 @@
-import type { ObjectiveGradingResult } from '@study408/shared';
+import type { SubmitAnswerResult } from '@study408/shared';
 import { callCloudFunction } from './cloud';
 
 interface CloudLike {
@@ -6,5 +6,5 @@ interface CloudLike {
 }
 
 export function submitAnswer(cloud: CloudLike, params: { questionId: string; userAnswer: string[]; durationSeconds: number }) {
-  return callCloudFunction<ObjectiveGradingResult>(cloud, 'submitAnswer', params);
+  return callCloudFunction<SubmitAnswerResult>(cloud, 'submitAnswer', params);
 }

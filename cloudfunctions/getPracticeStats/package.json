@@ -1,0 +1,11 @@
+{
+  "name": "get-practice-stats",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "@study408/shared": "workspace:*",
+    "@study408/cloud-common": "workspace:*",
+    "wx-server-sdk": "latest"
+  }
+}

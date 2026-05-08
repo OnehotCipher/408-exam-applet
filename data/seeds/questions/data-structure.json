@@ -1,0 +1,262 @@
+[
+  {
+    "_id": "ds-linear-list-001",
+    "type": "single_choice",
+    "subjectId": "data-structure",
+    "chapterId": "ds-linear-list",
+    "knowledgePointIds": [
+      "ds-linear-list-concept"
+    ],
+    "stem": "线性表采用顺序存储时，逻辑上相邻的两个元素在物理存储位置上的关系通常是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "地址连续"
+      },
+      {
+        "key": "B",
+        "text": "地址随机"
+      },
+      {
+        "key": "C",
+        "text": "通过指针相连"
+      },
+      {
+        "key": "D",
+        "text": "存储位置无规律"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "analysis": "顺序存储用一组地址连续的存储单元依次存放线性表元素，因此逻辑相邻通常对应物理相邻。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "线性表",
+      "顺序存储"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "ds-linear-list-002",
+    "type": "single_choice",
+    "subjectId": "data-structure",
+    "chapterId": "ds-linear-list",
+    "knowledgePointIds": [
+      "ds-linear-list-storage"
+    ],
+    "stem": "在单链表中已知结点 p，若要在 p 之后插入新结点 s，正确的指针修改顺序是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "p.next = s; s.next = p.next"
+      },
+      {
+        "key": "B",
+        "text": "s = p.next; p.next = s"
+      },
+      {
+        "key": "C",
+        "text": "s.next = p.next; p.next = s"
+      },
+      {
+        "key": "D",
+        "text": "p = s.next; s.next = p"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "analysis": "应先令 s 指向 p 的后继，再令 p 指向 s，避免丢失原后继结点。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "线性表",
+      "链式存储"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "ds-linear-list-003",
+    "type": "multiple_choice",
+    "subjectId": "data-structure",
+    "chapterId": "ds-linear-list",
+    "knowledgePointIds": [
+      "ds-linear-list-concept",
+      "ds-linear-list-storage"
+    ],
+    "stem": "关于线性表存储结构，下列说法正确的有（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "顺序表支持按位序随机访问"
+      },
+      {
+        "key": "B",
+        "text": "单链表查找第 i 个结点的时间复杂度一定为 O(1)"
+      },
+      {
+        "key": "C",
+        "text": "链式存储便于插入和删除结点"
+      },
+      {
+        "key": "D",
+        "text": "顺序存储通常要求一片连续存储空间"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "analysis": "顺序表具有随机访问能力并要求连续空间；单链表按位序查找通常需要从头遍历；链式存储插入删除更灵活。",
+    "score": 1,
+    "difficulty": "medium",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "线性表",
+      "存储结构"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "ds-tree-001",
+    "type": "single_choice",
+    "subjectId": "data-structure",
+    "chapterId": "ds-tree",
+    "knowledgePointIds": [
+      "ds-tree-traversal"
+    ],
+    "stem": "某二叉树先序序列为 A B C D，中序序列为 B A D C，则该二叉树的根结点是（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "A"
+      },
+      {
+        "key": "B",
+        "text": "B"
+      },
+      {
+        "key": "C",
+        "text": "C"
+      },
+      {
+        "key": "D",
+        "text": "D"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "analysis": "先序遍历序列的第一个结点就是二叉树根结点。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "二叉树",
+      "遍历"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "ds-tree-002",
+    "type": "single_choice",
+    "subjectId": "data-structure",
+    "chapterId": "ds-tree",
+    "knowledgePointIds": [
+      "ds-tree-property"
+    ],
+    "stem": "用顺序存储表示具有 n 个结点的完全二叉树时，编号为 i 的结点若存在左孩子，其编号为（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "i + 1"
+      },
+      {
+        "key": "B",
+        "text": "2i"
+      },
+      {
+        "key": "C",
+        "text": "2i + 1"
+      },
+      {
+        "key": "D",
+        "text": "n - i"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "analysis": "完全二叉树按层序编号时，结点 i 的左孩子编号为 2i，右孩子编号为 2i+1。",
+    "score": 1,
+    "difficulty": "easy",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "二叉树",
+      "完全二叉树"
+    ],
+    "status": "published"
+  },
+  {
+    "_id": "ds-tree-003",
+    "type": "multiple_choice",
+    "subjectId": "data-structure",
+    "chapterId": "ds-tree",
+    "knowledgePointIds": [
+      "ds-tree-traversal",
+      "ds-tree-property"
+    ],
+    "stem": "关于二叉树遍历与性质，下列说法正确的有（ ）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "仅知道中序序列通常不能唯一确定二叉树"
+      },
+      {
+        "key": "B",
+        "text": "先序序列和中序序列可唯一确定一棵二叉树"
+      },
+      {
+        "key": "C",
+        "text": "后序序列和中序序列可唯一确定一棵二叉树"
+      },
+      {
+        "key": "D",
+        "text": "满二叉树一定也是完全二叉树"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "analysis": "单独一种遍历序列通常不足以确定二叉树；先序或后序配合中序可以唯一确定；满二叉树满足完全二叉树定义。",
+    "score": 1,
+    "difficulty": "medium",
+    "year": null,
+    "sourceType": "original",
+    "sourceLabel": "Phase 2 seed original",
+    "tags": [
+      "二叉树",
+      "遍历",
+      "性质"
+    ],
+    "status": "published"
+  }
+]
